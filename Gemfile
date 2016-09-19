@@ -4,7 +4,6 @@ ruby "2.3.1"
 #
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails"
-gem "listen"
 
 # Note: We're using sqllite3 for development and testing
 gem "sqlite3", group: [:development, :test]
@@ -58,6 +57,7 @@ gem "awesome_print"
 group :development do
   # Access an IRB console on exceptions page and /console in development
   gem "web-console"
+  gem "listen"
 end
 
 group :development, :test do
