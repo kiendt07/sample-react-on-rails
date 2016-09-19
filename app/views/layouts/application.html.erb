@@ -18,10 +18,10 @@
                                  hot: 'application_non_webpack',
                                  'data-turbolinks-track' => "reload") %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-
-<%= react_component "NavigationBarApp" %>
 
 <div class="container">
   <%= yield %>

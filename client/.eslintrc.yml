@@ -26,3 +26,4 @@ rules:
 
   # https://github.com/eslint/eslint/issues/6876 SFC's marked as invalid
   new-cap: 0
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]

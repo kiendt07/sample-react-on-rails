@@ -12,29 +12,41 @@ export default class Layout extends BaseComponent {
 
   render() {
     return (
-      <section>
-        <header>
-          <ul>
-            <li>
-              <IndexLink to="/" activeClassName="active">
-                Comments (Root URL)
-              </IndexLink>
-            </li>
-            <li>
-              <Link to="/react-router" activeClassName="active">
-                Test React Router ('/react-router')
-              </Link>
-            </li>
-            <li>
-              <Link to="/react-router/redirect" activeClassName="active">
-                Test Redirect
-                (url to '/react-router/redirect' which goes to root '/')
-              </Link>
-            </li>
-          </ul>
-        </header>
-        {this.props.children}
-      </section>
+      <div className="container">
+        <section>
+          <header>
+            <nav className="navbar navbar-default">
+              <div className="container-fluid">
+
+                <ul className="nav navbar-nav">
+                  <li>
+                    <IndexLink to="/" activeClassName="active">
+                      Home
+                    </IndexLink>
+                  </li>
+                </ul>
+
+                <ul className="nav navbar-nav navbar-right">
+                  <li>
+                    <Link to="help">
+                      Help
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="login">
+                      Login
+                    </Link>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shakacode/react-webpack-rails-tutorial"><strong>Github repo</strong></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          {this.props.children}
+        </section>
+      </div>
     );
   }
 }

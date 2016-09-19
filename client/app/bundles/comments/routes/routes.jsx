@@ -4,11 +4,12 @@ import Layout from '../layout/Layout';
 import TestReactRouter from '../components/TestReactRouter/TestReactRouter';
 import TestReactRouterRedirect from '../components/TestReactRouterRedirect/TestReactRouterRedirect';
 import RouterCommentsContainer from '../containers/RouterCommentsContainer';
+import HomeComponent from '../components/HomeComponent.react';
 
 export default (
   <Route path="/" component={Layout}>
     <IndexRoute
-      component={RouterCommentsContainer}
+      component={HomeComponent}
     />
     <Route
       path="react-router"
